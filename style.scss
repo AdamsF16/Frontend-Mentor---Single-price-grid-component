@@ -1,9 +1,60 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
 body {
-    font-family: 'Karla', sans-serif;
+    background-color: hsl(204, 43%, 93%);
+}
+
+.price {
+    &__component {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        font-family: 'Karla', sans-serif;
+        justify-content: center;
+        align-content: center;
+        margin-top: 3em;
+    }
+
+    &__item {
+        grid-column: 1/2;
+        margin: 0 4em;
+        padding: 1em 2em;
+    }
+
+    &__item-one {
+        grid-row: 1/2;
+        background-color: #fff;        
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+    }
+
+    &__item-two {
+        grid-row: 2/3;
+        background-color: hsl(179, 62%, 43%);
+    }
+
+    &__item-three {
+        grid-row: 3/4;
+        background-color: hsl(179, 80%, 65%);
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+    }
 }
 
 
 
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+
+    a { 
+        color: hsl(228, 45%, 44%); 
+    } 
+}
