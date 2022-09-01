@@ -7,6 +7,11 @@
   padding: 0;
 }
 
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: hsl(204deg, 43%, 93%);
 }
@@ -40,9 +45,73 @@ body {
 }
 .price__item-three {
   grid-row: 3/4;
-  background-color: hsl(179deg, 80%, 65%);
+  background-color: hsl(179deg, 70%, 59%);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
+}
+.price__title {
+  font-size: 2rem;
+  padding: 1em 0;
+}
+.price__title-one {
+  color: hsl(179deg, 76%, 39%);
+}
+.price__title-two, .price__title-three {
+  color: #fff;
+}
+.price__subtitle {
+  color: hsl(71deg, 73%, 54%);
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1em;
+}
+.price__text {
+  font-size: 1.2rem;
+  margin-bottom: 1em;
+}
+.price__text-one {
+  color: hsl(218deg, 22%, 67%);
+  line-height: 1.8em;
+}
+.price__text-two {
+  color: #fff;
+  padding: 0.5em 0;
+}
+.price__text-three {
+  color: #fff;
+  line-height: 1.5em;
+  max-width: 140px;
+}
+.price__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+.price__value {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #fff;
+}
+.price__time {
+  font-size: 1.2rem;
+  color: hsl(216deg, 26%, 79%);
+  margin-top: 0.8em;
+  margin-left: 0.8em;
+}
+.price__btn {
+  width: 100%;
+  padding: 1em;
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: hsl(71deg, 73%, 54%);
+  border: 1px solid transparent;
+  border-radius: 8px;
+  margin-top: 0.4em;
 }
 
 .attribution {
