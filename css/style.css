@@ -128,7 +128,7 @@ body {
   .price__component {
     grid-template-columns: 250px 250px;
     grid-template-rows: 200px 1fr;
-    margin: 3em 3em;
+    margin: 10em 3em;
   }
   .price__item {
     margin: 0;
