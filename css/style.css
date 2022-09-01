@@ -19,7 +19,7 @@ body {
 .price__component {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: 1fr 1fr mimnax(1fr, 350px);
   font-family: "Karla", sans-serif;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -50,7 +50,7 @@ body {
   border-bottom-right-radius: 8px;
 }
 .price__title {
-  font-size: 2rem;
+  font-size: 1.8rem;
   padding: 1em 0;
 }
 .price__title-one {
@@ -74,13 +74,13 @@ body {
   line-height: 1.8em;
 }
 .price__text-two {
-  color: #fff;
+  color: hsl(204deg, 43%, 93%);
   padding: 0.5em 0;
 }
 .price__text-three {
-  color: #fff;
+  color: hsl(204deg, 43%, 93%);
   line-height: 1.5em;
-  max-width: 140px;
+  max-width: 150px;
 }
 .price__box {
   display: -webkit-box;
@@ -112,6 +112,7 @@ body {
   border: 1px solid transparent;
   border-radius: 8px;
   margin-top: 0.4em;
+  margin-bottom: 1em;
   cursor: pointer;
 }
 
@@ -121,4 +122,30 @@ body {
 }
 .attribution a {
   color: hsl(228deg, 45%, 44%);
+}
+
+@media (min-width: 500px) {
+  .price__component {
+    grid-template-columns: 250px 250px;
+    grid-template-rows: 200px 1fr;
+    margin: 3em 3em;
+  }
+  .price__item {
+    margin: 0;
+    padding: 1.8em 3em;
+  }
+  .price__item-one {
+    grid-column: 1/3;
+    grid-row: 1/2;
+  }
+  .price__item-two {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    border-bottom-left-radius: 8px;
+  }
+  .price__item-three {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    border-bottom-left-radius: 0px;
+  }
 }/*# sourceMappingURL=style.css.map */
